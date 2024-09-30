@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* main{
+    
+    height: 100vh;
+    background-image: url(../images/Bone\ White\ Blue\ Groovy\ You\ Matter\ Desktop\ Wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+header{
+    z-index: 2;
+}
+header nav div .enter{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+header nav div .enter .login{
+    color: rgb(48, 83, 48);
+    transition: 3s;
+}
+header nav div .enter .logout{
+    color: rgb(201, 49, 49);
+}
+header nav div .enter li a:hover{
+    transform: scale(1.02,1.05) !important;
+}
+.full-screen-image{
+    width: 100vh;
+    height: 100vh; 
+    object-fit: cover;
+}
+main{
+    position: relative;
+}
+main img{
+    position: absolute;
+    height: 100vh !important;
+    object-fit: contain;
+    position: fixed;
+}
+.section-form{
+    position: absolute;
+    width: 80%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    background-color: rgba(117, 114, 106,0.5);
+    padding: 20px;
+}
+
+h2{
+    color: rgb(118, 154, 184);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+.home{
+    margin: auto;
+}
+.dropdown-menu {
+    width: 280px; /* Dropdown width */
+    min-height: 200px; /* Max height for the dropdown */
+    overflow-y: auto; /* Enable scrolling if too many items */
+    margin-left: -190px;
+  }
+
+  .dropdown-item {
+    width: 100%; /* Fit the dropdown width */
+    white-space: normal; /* Allow text to wrap onto the next line */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word;
+  }
+ .dropdown-menu p{
+    margin: auto;
+    font-size: 15px;
+    color: rgb(218, 100, 32);
+    padding: 20px;
+    font-weight: bold   ;
+ }
+ .foot{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+    color: black;
+ }
+
+ .cartItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rowimg {
+    width: 50px;
+    height: 50px;
+}
+.trash{ 
+    color: rgb(197, 70, 70);
+    padding: 5px;
+}
+
+.fa-eye, .fa-eye-slash {
+    cursor: pointer;
+}
+.passInput{
+    position: relative;
+    display: flex;
+}
+#pwd{
+    position: absolute;
+}
+#showPass{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}

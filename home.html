@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./style/style.css" rel="styleSheet">
+        <link href="./style/all.css" rel="styleSheet">
+
+        
+
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./images/Orange Simple Online Shopping Logo.png" width="50px"
+                         class="rounded-pill"></a>
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">about us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> contact us</a>
+                                    </li>
+                            </ul>
+
+                            <ul class="navbar-nav enter">
+
+                                  <div class="dropdown">
+                                
+                                    <button type="button" class="btn btn-secondary rounded-pill dropdown-toggle" data-bs-toggle="dropdown">
+                                        <i class="fas fa-cart-plus"></i> 
+                                        <span class="badge bg-success rounded-pill" id="badge">0</span>
+                                      </button>
+                                    <ul class="dropdown-menu" id="cartItem">
+                                        <p>Your Cart is Empty</p>
+                                      <li><a class="dropdown-item" href="#"></a></li>
+                                      <div class="foot">
+                                        <div class="view-btn" >
+                                            <!-- <button type="button" class="btn btn-secondary" style="width: 100% !important;"><a href="#" >View Product Cart</a></button> -->
+                                            <div style='padding:10px'>
+                                                <button type="button" class="btn btn-secondary btn-block" style='width:100%;'><a href="cartProducts.html" style="text-decoration:none; color:white" >View Product Cart</a></button>
+                                            </div>
+                                        </div>
+                                        <h3>Total</h3>
+
+                                        <h2 id="total">0.00$ </h2>
+                                      </div>
+                                      
+                                    </ul>
+                                  </div>
+
+                                <li class="nav-item" id="user-info">
+                                    <a class="nav-link" href="#" ><i class="fas fa-user-circle"></i><a href="#" id="user"></a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html" id="logout"><i class="fas fa-sign-out-alt logout"></i> LogOut</a>
+                                </li>
+                            </ul>
+
+                          </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+        <section class="home">
+            <div class="container">
+
+                <div class="products row">
+
+                    
+                 
+                    
+                </div>
+                
+            </div>
+        </section>
+            
+                
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="./script/home.js"></script>
+    </body>
