@@ -32,7 +32,7 @@ let products=[
     {
         id:2,
         name:"Products: Bottle",
-        img:"images/bottle.jpg",
+        img:"images/Bottle.jpg",
         desc:"Description: Supplies",
         price: 35
     },
