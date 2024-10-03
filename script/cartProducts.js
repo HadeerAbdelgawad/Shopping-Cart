@@ -8,13 +8,22 @@ window.onload = function() {
 function removeFromCart(id) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    cart = cart.filter(item => item.id !== id);
+    let cartItem = cart.findIndex(item => item.id === id);
+
+    if(cartItem!==-1){
+        if(cart[cartItem].quantity>1){
+            cart[cartItem].quantity-=1
+            
+        }
+        else{
+            cart= cart.filter(item=> item.id !== id)
+            
+        }
+    }
 
     localStorage.setItem('cart', JSON.stringify(cart));
 
     updateCart()
-    // Call the function to update the cart display
-    // window.onload(removeFromCart());
 }
 
 

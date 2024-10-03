@@ -3,13 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* main{
-    
-    height: 100vh;
-    background-image: url(../images/Bone\ White\ Blue\ Groovy\ You\ Matter\ Desktop\ Wallpaper.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 header{
     z-index: 2;
 }
@@ -56,6 +49,12 @@ h2{
 }
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 .home{
+    /* margin: auto !important; */
+    /* display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; */
+}
+.home .products{
     margin: auto;
 }
 .dropdown-menu {

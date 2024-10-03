@@ -27,14 +27,14 @@ let products=[
         name:"Products: Leather Bag",
         img:"images/bag.jpg",
         desc:"Description: Women Fashion's",
-        price: 20
+        price: 50
     },
     {
         id:2,
         name:"Products: Bottle",
-        img:"images/bottle.jpg",
+        img:"images/Bottle.jpg",
         desc:"Description: Supplies",
-        price: 35
+        price: 20
     },
     {
         id:3,
@@ -48,77 +48,77 @@ let products=[
         name:"Products: Shoes",
         img:"images/Football (1).jpg",
         desc:"Description: Sport",
-        price: 35
+        price: 30
     },
     {
         id:5,
         name:"Products: Glass Cup",
         img:"images/Glass cup.jpg",
         desc:"Description: Home & Kitchen",
-        price: 35
+        price: 20
     },
     {
         id:6,
         name:"Products: Jacket",
         img:"images/Jacket.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 40
     },
     {
         id:7,
         name:"Products: Jacket",
         img:"images/Jacket1.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 40
     },
     {
         id:8,
         name:"Products: Glass Cup",
         img:"images/Glass cup.jpg",
         desc:"Description: Home & Kitchen",
-        price: 35
+        price: 20
     },
     {
         id:9,
         name:"Products: T-shirt",
         img:"images/product1.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 25
     },
     {
         id:10,
         name:"Products: Glass Cup",
         img:"images/Glass cup1.jpg",
         desc:"Description: Home & Kitchen",
-        price: 35
+        price: 24
     },
     {
         id:11,
         name:"Products: Air pods",
         img:"images/product2.jpg",
         desc:"Description: Electronics",
-        price: 35
+        price: 55
     },
     {
         id:12,
         name:"Products: Jacket",
         img:"images/product3.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 40
     },
     {
         id:13,
         name:"Products: Bottle",
         img:"images/product4.jpg",
         desc:"Description: Supplies",
-        price: 35
+        price: 20
     },
     {
         id:14,
         name:"Products: Glasses",
         img:"images/product5.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 27
     },
     {
         id:15,
@@ -132,21 +132,21 @@ let products=[
         name:"Products: Bag back",
         img:"images/product7.jpg",
         desc:"Description: Supplies",
-        price: 35
+        price: 55
     },
     {
         id:17,
         name:"Products: Shoes",
         img:"images/product8.jpg",
         desc:"Description: Men Fashion's",
-        price: 35
+        price: 59
     },
     {
         id:18,
         name:"Products: Bag",
         img:"images/product9.png",
         desc:"Description: Women Fashions",
-        price: 35
+        price: 30
     }
 ]
 
@@ -196,7 +196,8 @@ function addToCart(index) {
 function updateCart(){
     let cartItem= document.getElementById('cartItem')
     let cart= JSON.parse(localStorage.getItem('cart')) || []
-    let total=0
+    let totalPrice=0
+    let totalItem=0
 
     cartItem.innerHTML=""
 
@@ -213,7 +214,8 @@ function updateCart(){
 
     else{
     cart.forEach(item=>{
-        total += item.price *item.quantity
+        totalItem+=item.quantity
+        totalPrice += item.price *item.quantity
 
         cartItem.innerHTML +=`
         <div class="cartItem">
@@ -235,13 +237,13 @@ function updateCart(){
     
     <div class="foot">
             <h3>Total</h3>
-            <h2 id="total">${total}$</h2>
+            <h2 id="total">${totalPrice}$</h2>
         </div>  
     `
 }
 
-    document.getElementById('total').innerText = `${total.toFixed(2)}$`;
-    document.getElementById('badge').innerHTML = cart.length
+    document.getElementById('total').innerText = `${totalPrice.toFixed(2)}$`;
+    document.getElementById('badge').innerHTML = totalItem
 }
 
 ////////////////////////////////////////////////////////////////////////////////
